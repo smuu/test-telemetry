@@ -17,4 +17,11 @@ mod tests {
         let result = add(3, 3);
         assert_eq!(result, 6);
     }
+
+    #[test]
+    #[should_panic]
+    fn it_fails() {
+        let result = add(4, 4);
+        assert_eq!(result, 8);
+    }
 }
